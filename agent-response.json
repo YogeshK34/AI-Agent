@@ -1,0 +1,32 @@
+{
+  "steps": [
+    {
+      "stepType": "initial",
+      "toolCalls": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_7QGq6MRbq0L3lLwpN23OMDKm",
+          "toolName": "weather",
+          "args": { "location": "Tokyo" }
+        }
+      ],
+      "toolResults": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_7QGq6MRbq0L3lLwpN23OMDKm",
+          "toolName": "weather",
+          "result": {
+            "location": "Tokyo",
+            "temperature": 77,
+            "condition": "cloudy"
+          }
+        }
+      ]
+    },
+    {
+      "stepType": "tool-result",
+      "text": "The weather in Tokyo is currently cloudy with a temperature of 77°F."
+    }
+  ],
+  "finalAnswer": "The weather in Tokyo is currently cloudy with a temperature of 77°F."
+}
